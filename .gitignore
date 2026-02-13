@@ -1,0 +1,19 @@
+#Archivos temporales
+*.tmp
+*.temp
+*.log
+*.swp
+*~
+#Sistema
+.DS_Store
+Thumbs.db
+#Backups
+*.bak
+backup/
+#Configuraciones locales
+.env
+local-config.sh
+#Directorios de test
+test-data/
+scratch/
+
