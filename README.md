@@ -31,35 +31,7 @@ Cada semana incluye un capstone practico versionado con Git.
 
 ## Estructura del Repositorio
 
-linux-lab/
-│
-├── README.md
-├── .gitignore
-│
-├── semana01/
-│   ├── README.md
-│   ├── filesystem-map.md
-│   ├── filesystem-diagram.txt
-│   └── ejemplos-practicos.md
-│
-├── semana02/
-│   ├── README.md
-│   ├── analisis-permisos.md
-│   ├── estructura-final.txt
-│   ├── permisos-aplicados.txt
-│   │
-│   └── organized/
-│       ├── config/
-│       ├── documents/
-│       ├── images/
-│       ├── logs/
-│       ├── scripts/
-│       └── temp/
-│
-├── semana03/
-│   └── (por completar)
-│
-└── ...
+<pre> ```bash linux-lab/ │ ├── README.md ├── .gitignore │ ├── semana01/ │ ├── README.md │ ├── filesystem-map.md │ ├── filesystem-diagram.txt │ └── ejemplos-practicos.md │ ├── semana02/ │ ├── README.md │ ├── analisis-permisos.md │ ├── estructura-final.txt │ ├── permisos-aplicados.txt │ │ │ └── organized/ │ ├── config/ │ ├── documents/ │ ├── images/ │ ├── logs/ │ ├── scripts/ │ └── temp/ │ ├── semana03/ │ └── (por completar) │ └── ... ``` </pre>
 
 ## Objetivos del Curso
 - Aprender linea de comandos Linux
