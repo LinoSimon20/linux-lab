@@ -7,7 +7,7 @@ echo ""
 
 # Crear estructura de directorios
 echo "[1/4] Creando directorios..."
-mkdir -p organized/{ documents , images , scripts , config , logs , temp }
+mkdir -p organized/{documents,images,scripts,config,logs,temp}
 
 echo "Directorios creados"
 
