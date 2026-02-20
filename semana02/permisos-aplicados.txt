@@ -1,0 +1,81 @@
+organized/:
+total 24
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 config
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 documents
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 images
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 logs
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 scripts
+drwxr-xr-x 2 alden alden 4096 feb 20 00:52 temp
+
+organized/config:
+total 96
+-rw-r--r-- 1 alden alden 25 feb 20 00:09 config_1.conf
+-rw-r--r-- 1 alden alden 25 feb 20 00:09 config_2.conf
+-rw-r--r-- 1 alden alden 25 feb 20 00:09 config_3.conf
+-rw-r--r-- 1 alden alden 25 feb 20 00:09 config_4.conf
+-rw-r--r-- 1 alden alden 15 feb 20 00:09 settings_1.json
+-rw-r--r-- 1 alden alden 15 feb 20 00:09 settings_2.json
+-rw-r--r-- 1 alden alden 15 feb 20 00:09 settings_3.json
+-rw-r--r-- 1 alden alden 15 feb 20 00:09 settings_4.json
+
+organized/documents:
+total 208
+-rw-r--r-- 1 alden alden    0 feb 13 13:11 analisis-permisos.md
+-rw-r--r-- 1 alden alden   22 feb 20 00:09 documento_1.txt
+-rw-r--r-- 1 alden alden   22 feb 20 00:09 documento_2.txt
+-rw-r--r-- 1 alden alden   22 feb 20 00:09 documento_3.txt
+-rw-r--r-- 1 alden alden   22 feb 20 00:09 documento_4.txt
+-rw-r--r-- 1 alden alden   22 feb 20 00:09 documento_5.txt
+-rw-r--r-- 1 alden alden 3149 feb 20 00:10 estado-inicial.txt
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 notas_1.md
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 notas_2.md
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 notas_3.md
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 notas_4.md
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 notas_5.md
+-rw-r--r-- 1 alden alden    0 feb 13 13:10 README.md
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 reporte_1.doc
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 reporte_2.doc
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 reporte_3.doc
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 reporte_4.doc
+-rw-r--r-- 1 alden alden   10 feb 20 00:09 reporte_5.doc
+
+organized/images:
+total 120
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 foto_1.jpg
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 foto_2.jpg
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 foto_3.jpg
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 foto_4.jpg
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 foto_5.jpg
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 screenshot_1.png
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 screenshot_2.png
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 screenshot_3.png
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 screenshot_4.png
+-rw-r--r-- 1 alden alden 14 feb 20 00:09 screenshot_5.png
+
+organized/logs:
+total 84
+-rw-r--r-- 1 alden alden 89 feb 20 00:09 app_1.log
+-rw-r--r-- 1 alden alden 89 feb 20 00:09 app_2.log
+-rw-r--r-- 1 alden alden 89 feb 20 00:09 app_3.log
+-rw-r--r-- 1 alden alden 54 feb 20 00:09 sistema_1.log
+-rw-r--r-- 1 alden alden 54 feb 20 00:09 sistema_2.log
+-rw-r--r-- 1 alden alden 54 feb 20 00:09 sistema_3.log
+-rw-r--r-- 1 alden alden 54 feb 20 00:09 sistema_4.log
+
+organized/scripts:
+total 144
+-rwxr-xr-x 1 alden alden 1278 feb 20 00:08 generate-messy-files.sh
+-rwxr-xr-x 1 alden alden 1912 feb 20 00:48 organize-files.sh
+-rwxr-xr-x 1 alden alden   45 feb 20 00:09 script_1.sh
+-rwxr-xr-x 1 alden alden   45 feb 20 00:09 script_2.sh
+-rwxr-xr-x 1 alden alden   45 feb 20 00:09 script_3.sh
+-rwxr-xr-x 1 alden alden   45 feb 20 00:09 script_4.sh
+-rwxr-xr-x 1 alden alden   45 feb 20 00:09 script_5.sh
+-rwxr-xr-x 1 alden alden   58 feb 20 00:09 utilidad_1.py
+-rwxr-xr-x 1 alden alden   58 feb 20 00:09 utilidad_2.py
+-rwxr-xr-x 1 alden alden   58 feb 20 00:09 utilidad_3.py
+-rwxr-xr-x 1 alden alden   58 feb 20 00:09 utilidad_4.py
+-rwxr-xr-x 1 alden alden   58 feb 20 00:09 utilidad_5.py
+
+organized/temp:
+total 0
