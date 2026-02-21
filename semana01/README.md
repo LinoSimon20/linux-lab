@@ -8,11 +8,11 @@
 ## Contenido
 
 ‘‘‘
-semana01 /
-	README . md
-	filesystem - map . md
-	filesystem - diagram . txt
-	ejemplos - practicos . md
+semana01/
+	README.md
+	filesystem-map.md
+	filesystem-diagram.txt
+	ejemplos-practicos.md
 ‘‘‘
 - ‘filesystem-map.md‘ - Documentacion detallada de directorios
 - ‘filesystem-diagram.txt‘ - Diagrama visual ASCII
@@ -38,12 +38,12 @@ semana01 /
 - ‘git log‘ - Ver historial
 
 ## Checklist
-- [ x ] Repositorio git inicializado
-- [ x ] filesystem-map.md completo (10+ directorios )
-- [ x ] filesystem-diagram.txt creado
-- [ x ] ejemplos-practicos.md con comandos
-- [ x ] Minimo 5 commits descriptivos
-- [ x ] Repositorio en GitHub
+- [x] Repositorio git inicializado
+- [x] filesystem-map.md completo (10+ directorios)
+- [x] filesystem-diagram.txt creado
+- [x] ejemplos-practicos.md con comandos
+- [x] Minimo 5 commits descriptivos
+- [x] Repositorio en GitHub
 
 ## Ejecucion
 
