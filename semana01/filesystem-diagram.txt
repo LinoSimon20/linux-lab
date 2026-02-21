@@ -1,4 +1,4 @@
-istema de Archivos Linux
+Sistema de Archivos Linux
 =========================
 /(root)
 	home/
@@ -43,6 +43,6 @@ istema de Archivos Linux
 	proc/ (virtual)
 		cpuinfo
 		meminfo
-		[ PIDs ]/
+		[PIDs]/
 	sys/ (virtual)
 		devices/
