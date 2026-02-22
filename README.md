@@ -30,8 +30,8 @@ Cada semana incluye un capstone practico versionado con Git.
 |   15   | Proyecto Final                 |        |
 
 ## Estructura del Repositorio
-
-.
+'''
+.linux-lab
 ├── README.md
 ├── semana01
 │   ├── ejemplos-practicos.md
@@ -105,7 +105,7 @@ Cada semana incluye un capstone practico versionado con Git.
     │   └── temp
     ├── permisos-aplicados.txt
     └── README.md
-
+'''
 ## Objetivos del Curso
 - Aprender linea de comandos Linux
 - Desarrollar scripts en Bash
