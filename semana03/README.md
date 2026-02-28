@@ -25,7 +25,7 @@ de procesamiento de texto UNIX: grep, cut, sort, uniq, wc, tr y awk.
 
 ### 2. Analizar el log
 
-‘‘‘ bash
+‘‘‘bash
 # Usar log de prueba
 ./log-analyzer.sh
 
@@ -49,7 +49,7 @@ cat report.md
 
 ## Pipeline Principal
 
-‘‘‘ bash
+‘‘‘bash
 # Extraer IPs, ordenar y contar frecuencias
 cut -d ’|’ -f2 sample.log | tr -d ’ ’ | \
     sort | uniq -c | sort -rn | head -10
