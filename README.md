@@ -15,7 +15,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |--------|--------------------------------|--------|
 |   01   | Fundamentos + Git              |   Ok   |
 |   02   | Manipulacion de Archivos       |   Ok   |
-|   03   | Procesamiento de Texto         |        |
+|   03   | Procesamiento de Texto         |   Ok   |
 |   04   | Editores y Configuracion       |        |
 |   05   | Bash Scripting - Fundamentos   |        |
 |   06   | Bash Scripting - Condicionales |        |
