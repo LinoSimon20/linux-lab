@@ -16,7 +16,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |   01   | Fundamentos + Git              |   Ok   |
 |   02   | Manipulacion de Archivos       |   Ok   |
 |   03   | Procesamiento de Texto         |   Ok   |
-|   04   | Editores y Configuracion       |        |
+|   04   | Editores y Configuracion       |   Ok   |
 |   05   | Bash Scripting - Fundamentos   |        |
 |   06   | Bash Scripting - Condicionales |        |
 |   07   | Bash Scripting - Loops         |        |
@@ -114,8 +114,15 @@ Cada semana incluye un capstone practico versionado con Git.
 │    ├── commands-used.md
 │    └── README.md
 └── semana04/
+│    ├── install.sh
+│    ├── uninstall.sh
+│    ├── README.md
+│    └── dotfiles/
+│         ├── bashrc
+│         ├── bash_aliases
+│         └── vimrc
+└── semana05/
      └── (En proceso...)
-
 ```
 ## Objetivos del Curso
 - Aprender linea de comandos Linux
