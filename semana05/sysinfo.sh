@@ -34,28 +34,6 @@ uso() {
 	exit 2
 }
 
-# === Procesar argumentos ===
-MODO="${1:-all}"
-
-case "$MODO" in
-	--all|"all") MODO="all" ;;
-	--cpu) MODO="cpu" ;;
-	--mem) MODO="mem" ;;
-	--disk) MODO="disk" ;;
-	--proc) MODO="proc" ;;
-	--version) echo "sysinfo.sh version $VERSION"; exit 0 ;;
-	--help|-h) uso ;;
-	*)
-	echo "Error: opcion desconocida '$MODO'"
-	uso
-	;;
-esac
-
-echo "$SEPARADOR"
-printf " REPORTE DEL SISTEMA - sysinfo.sh v%s\n" "$VERSION"
-echo "$SEPARADOR"
-echo ""
-
 # === Seccion 1: Informacion general ===
 seccion_general () {
 	echo "[ INFORMACION DEL SISTEMA ]"
@@ -69,11 +47,6 @@ seccion_general () {
 	printf " %-18s %s\n" "Encendido:" "$(uptime -p)"
 	echo ""
 }
-
-# === Ejecutar segun el modo ===
-if [ "$MODO" = "all" ]; then
-	seccion_general
-fi
 
 # === Seccion 2: CPU ===
 seccion_cpu () {
@@ -134,7 +107,28 @@ seccion_procesos () {
 	echo ""
 }
 
-# === Ejecutar segun el modo ===
+# === Procesar argumentos ===
+MODO="${1:-all}"
+
+case "$MODO" in
+	--all|"all") MODO="all" ;;
+	--cpu) MODO="cpu" ;;
+	--mem) MODO="mem" ;;
+	--disk) MODO="disk" ;;
+	--proc) MODO="proc" ;;
+	--version) echo "sysinfo.sh version $VERSION"; exit 0 ;;
+	--help|-h) uso ;;
+	*)
+	echo "Error: opcion desconocida '$MODO'"
+	uso
+	;;
+esac
+
+echo "$SEPARADOR"
+printf " REPORTE DEL SISTEMA - sysinfo.sh v%s\n" "$VERSION"
+echo "$SEPARADOR"
+echo ""
+
 case "$MODO" in
 	all)
 		seccion_general
