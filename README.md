@@ -18,7 +18,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |   03   | Procesamiento de Texto         |   Ok   |
 |   04   | Editores y Configuracion       |   Ok   |
 |   05   | Bash Scripting - Fundamentos   |   Ok   |
-|   06   | Bash Scripting - Condicionales |        |
+|   06   | Bash Scripting - Condicionales |   Ok   |
 |   07   | Bash Scripting - Loops         |        |
 |   08   | Bash Scripting - Avanzado      |        |
 |   09   | Gestion de Procesos            |        |
@@ -126,7 +126,13 @@ Cada semana incluye un capstone practico versionado con Git.
 │    ├── commands-used.md
 │    ├── README.md
 │    └── sysinfo.sh
-└── semana06/
+├── semana06/
+│    ├── README.md
+│    ├── backup-check.sh
+│    ├── commands-used.md
+│    └── logs/
+│	  └── backup-check-YYYYMMDD.log
+└── semana07/
      └── (En proceso...)
 ```
 
