@@ -49,7 +49,28 @@ registrar() {
 	local mensaje="$2"
 	local ts
 	ts=$(date '+%Y-%m-%d %H:%M:%S')
-	printf "[%s] [%-7s] %s\n" \ "$ts" "$nivel" "$mensaje" | tee -a "$LOGFILE"
+	printf "[%s] [%-7s] %s\n" "$ts" "$nivel" "$mensaje" | tee -a "$LOGFILE"
+}
+
+resumen_log() {
+    echo ""
+    echo "========================================="
+    echo "           RESUMEN DE LA SESION          "
+    echo "========================================="
+    local total alertas
+    total=$(grep -c "\[INFO\]" "$LOGFILE" 2>/dev/null || echo 0)
+    alertas=$(grep -c "\[ALERTA\]" "$LOGFILE" 2>/dev/null || echo 0)
+
+    printf "%-25s %d\n" "Comprobaciones totales:" "$total"
+    printf "%-25s %d\n" "Alertas emitidas:" "$alertas"
+    echo ""
+    echo "Ultimas entradas:"
+
+    # Leer el log con while y mostrar las ultimas 3 lineas [cite: 1040, 1041]
+    tail -3 "$LOGFILE" | while IFS= read -r linea; do
+        echo "$linea"
+    done
+    echo "========================================="
 }
 
 # Procesar argumentos con while
@@ -78,7 +99,7 @@ iteracion=0
 while true; do
 	iteracion=$((iteracion + 1))
 
-	# SAlir si se alcanzo el limite de iteraciones
+	# Salir si se alcanzo el limite de iteraciones
 	if [ "$MAX_ITER" -gt 0 ] \
 		&& [ "$iteracion" -gt "$MAX_ITER" ]; then
 		registrar "INFO" \
@@ -103,3 +124,6 @@ while true; do
 
 	sleep "$INTERVALO"
 done
+
+resumen_log
+registrar "INFO" "Monitor finalizado tras $((iteracion-1)) iteraciones."
