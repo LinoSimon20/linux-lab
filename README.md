@@ -20,7 +20,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |   05   | Bash Scripting - Fundamentos   |   Ok   |
 |   06   | Bash Scripting - Condicionales |   Ok   |
 |   07   | Bash Scripting - Loops         |   Ok   |
-|   08   | Bash Scripting - Avanzado      |        |
+|   08   | Bash Scripting - Avanzado      |   Ok   |
 |   09   | Gestion de Procesos            |        |
 |   10   | Systemd y Cron                 |        |
 |   11   | Gestion de Paquetes            |        |
@@ -136,7 +136,11 @@ Cada semana incluye un capstone practico versionado con Git.
 │    ├── README.md
 │    ├── monitor.sh
 │    └── commands-used.md
-└── semana08/
+├── semana08/
+│    ├── README.md
+│    ├── inventario.sh
+│    └── commands-used.md
+└── semana09/
      └── (En progreso...)
 ```
 
@@ -150,7 +154,7 @@ Cada semana incluye un capstone practico versionado con Git.
 - ** OS :** Linux Mint v.22.3
 - ** Shell :** Bash 5.2.21
 - ** VCS :** Git 2.43.0
-- ** Editor :** nano
+- ** Editor :** nano - vim
 - ** Hosting :** GitHub
 ## Contacto
 - Email : linosimon.s20@gmail.com
