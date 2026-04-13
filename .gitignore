@@ -1,4 +1,4 @@
-#Archivos temporales
+# Archivos temporales
 *.log
 *.tmp
 *.temp
@@ -6,7 +6,7 @@
 *.swo
 *~
 
-#Sistema
+# Sistema
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -16,20 +16,23 @@ desktop.ini
 *.backup
 backup/
 
-#Configuraciones locales
+# Configuraciones locales
 .env
 local-config.sh
 secrets.txt
-#IDEs
+
+# IDEs
 .vscode/
 .idea/
 *.sublime-*
 
-#Directorios de prueba
+# Directorios de prueba
 test-data/
 scratch/
 temp/
 
+# Archivos y logs de reporte de cada semana
 semana03/sample.log
 semana03/analisis-report.txt
 semana07/monitor.log
+semana08/inventario-report.md
