@@ -14,7 +14,7 @@
 ## Decisiones Tecnicas
 
 ### Por que 755 para scripts ?
-Los scripts necesitan el permiso de ejecucion ( x ) para poder ejecutarse directamente con ‘./ script . sh ‘.
+Los scripts necesitan el permiso de ejecucion (x) para poder ejecutarse directamente con `./ script . sh `.
 - Owner: rwx (7) - puede leer, modificar y ejecutar
 - Group: r-x (5) - puede leer y ejecutar, no modificar
 - Others: r-x (5) - puede leer y ejecutar, no modificar
@@ -29,8 +29,8 @@ Esto previene modificaciones accidentales por otros usuarios.
 
 ### Por que 755 para directorios?
 Los directorios NECESITAN el bit de ejecucion (x) para:
-1. Permitir ‘cd‘ al directorio
-2. Listar contenido con ‘ls‘
+1. Permitir `cd` al directorio
+2. Listar contenido con `ls`
 3. Acceder a archivos dentro
 Sin el permiso x, el directorio es inaccesible aunque tenga permiso r (lectura).
 
@@ -44,7 +44,7 @@ Otros usuarios solo necesitan leerlos para diagnostico, no modificarlos.
 
 ## Comandos Utilizados
 
-‘‘‘bash
+```bash
 # Cambiar permisos de directorios
 chmod 755 organized/*/
 
@@ -53,11 +53,11 @@ find organized/documents/ -type f -exec chmod 644 {} \;
 
 # Verificar permisos aplicados
 ls -l organized/documents/
-‘‘‘
+```
 
 ## Verificacion
 Puedes verificar que los permisos estan correctos con:
-'''bash
+```bash
 
 #Ver permisos de directorios
 ls -ld organized/*/
@@ -67,7 +67,7 @@ ls -l organized/scripts/
 
 # Intentar ejecutar un script
 ./organized/scripts/script_1.sh
-‘‘‘
+```
 
 ## Seguridad
 Los permisos aplicados siguen el principio de minimo privilegio:
