@@ -2,7 +2,7 @@
 
 ## Explorar el Sistema
 
-‘‘‘ bash
+``` bash
 # Ver ubicacion actual
 pwd
 
@@ -17,27 +17,27 @@ tree -L 2 -d
 
 # Volver a HOME
 cd ~
-‘‘‘
+```
 
 ## Examinar Directorios
 
-‘‘‘ bash
+```bash
 # Ver configuraciones
-ls - lh / etc | head -20
+ls -lh /etc | head -20
 
 # Ver logs del sistema
-ls - lh /var/log
+ls -lh /var/log
 
 # Ver tu directorio personal
 ls -la ~
 
 # Explorar dispositivos
-ls -l / dev | head
-‘‘‘
+ls -l /dev | head
+```
 
 ## Informacion del Sistema
 
-‘‘‘ bash
+```bash
 # Info del kernel
 uname -a
 
@@ -45,7 +45,7 @@ uname -a
 cat /etc/os-release
 
 # CPU
-cat /proc/cpuinfo | grep " model name " | head -1
+cat /proc/cpuinfo | grep "model name" | head -1
 
 # Memoria
 cat /proc/meminfo | head -5
@@ -56,14 +56,14 @@ lsblk
 df -h
 
 # Tamano de directorios raiz
-du - sh /* 2 >/ dev / null
-‘‘‘
+du -sh /* 2>/dev/null
+```
 
 ## Navegacion Avanzada
-‘‘‘ bash
+```bash
 
 # Ir a directorio y volver
-cd / var/log
+cd /var/log
 cd -
 
 # Crear y entrar a directorio
@@ -72,11 +72,10 @@ cd ~/proyectos/linux
 
 # Ver historial de directorios
 dirs -v
-‘‘‘
+```
 
 ## Buscar Archivos
-
-'''bash
+```bash
 # Buscar archivo por nombre
 find /etc -name "hosts" 2>/dev/null
 
@@ -85,4 +84,4 @@ find /etc -name "*.conf" -type f 2>/dev/null | head
 
 # Archivos grandes en home
 find ~ -type f -size +10M 2>/dev/null
-
+```
