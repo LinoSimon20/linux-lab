@@ -2,14 +2,14 @@
 # lib/procesos.sh - Funciones de inspección de procesos
 
 # Lista los N procesos con mayor uso de CPU
-listar_top_cpu () {
+listar_top_cpu() {
     local n="${1: -5}"
     echo "--- Top ${n} procesos por CPU ---"
     ps aux --sort=-%cpu | awk -v n="$n" \
-    	`NR >1 && NR <=n+1 {
+    	'NR>1 && NR<=n+1{
         	printf " %-8s PID:%-6s CPU :%5s%% MEM:%5s%%%s\n", 
 			$1 , $2 , $3, $4, $11
-    	}`
+    	}'
 }
 
 # Lista los N procesos con mayor uso de memoria
@@ -17,7 +17,7 @@ listar_top_mem () {
     local n="${1: -5}"
     echo "--- Top ${n} procesos por MEM ---"
     ps aux --sort=-%mem | awk -v n="$n" \
-    	'NR >1 && NR <=n+1 {
+    	'NR>1 && NR<=n+1 {
         	printf " %-8s PID:%-6s CPU :%5s%% MEM:%5s%%%s\n",
         		$1 , $2 , $3, $4, $11
     }'
