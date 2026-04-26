@@ -21,7 +21,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |   06   | Bash Scripting - Condicionales |   Ok   |
 |   07   | Bash Scripting - Loops         |   Ok   |
 |   08   | Bash Scripting - Avanzado      |   Ok   |
-|   09   | Gestion de Procesos            |        |
+|   09   | Gestion de Procesos            |   Ok   |
 |   10   | Systemd y Cron                 |        |
 |   11   | Gestion de Paquetes            |        |
 |   12   | Usuarios y Permisos            |        |
@@ -140,7 +140,15 @@ Cada semana incluye un capstone practico versionado con Git.
 │    ├── README.md
 │    ├── inventario.sh
 │    └── commands-used.md
-└── semana09/
+├── semana09/
+│    ├── README.md
+│    ├── monitor-procesos.sh
+│    ├── lib/
+│    │    ├── README.md
+│    │    └── monitor-procesos.sh
+│    └── reportes/
+│         └── README.md
+└── semana10/
      └── (En progreso...)
 ```
 
