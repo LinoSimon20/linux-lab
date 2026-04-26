@@ -1,6 +1,6 @@
 # Semana 09: Gestion de Procesos
 ## Descripcion
-` monitor - procesos . sh ` Herramienta CLI para inspeccionar procesos
+` monitor-procesos.sh ` Herramienta CLI para inspeccionar procesos
 del sistema, detectar anomalias y generar reportes con timestamp.
 
 ## Uso
@@ -12,15 +12,15 @@ del sistema, detectar anomalias y generar reportes con timestamp.
 - tu USUARIO Inspeccionar arbol de un usuario especifico
 - t UMBRAL % CPU para clasificar como "alto consumo" (default: 50)
 - k Enviar SIGTERM a procesos sobre el umbral
-- r ARCHIVO Guardar reporte en ruta e s p e c f i c a
+- r ARCHIVO Guardar reporte en ruta especifica
 - h Mostrar ayuda
 
 ## Ejemplos
 ```bash
 ./monitor-procesos.sh # Reporte completo
 ./monitor-procesos.sh bash sshd nginx # Verificar procesos
-./ monitor-procesos.sh -u root -t 30 # Alto consumo para root
-./ monitor-procesos.sh -t 70 -k # Terminar procesos pesados
+./monitor-procesos.sh -u root -t 30 # Alto consumo para root
+./monitor-procesos.sh -t 70 -k # Terminar procesos pesados
 ```
 
 ## Estructura
