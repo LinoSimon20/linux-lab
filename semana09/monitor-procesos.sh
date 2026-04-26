@@ -7,15 +7,15 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-source "${SCRIPT_DIR }/lib/alertas.sh"
-source "${SCRIPT_DIR }/lib/procesos.sh"
+source "${SCRIPT_DIR}/lib/alertas.sh"
+source "${SCRIPT_DIR}/lib/procesos.sh"
 
 # Valores por defecto
 USUARIO="${USER}"
-UMBRAL_CPU =50
+UMBRAL_CPU=50
 MATAR=false
 REPORTE="reportes/reporte -$(date '+%Y%m%d-%H%M%S').txt"
-PROCESOS_VIGILAR =()
+PROCESOS_VIGILAR=()
 
 uso() {
     echo "Uso: $0 [opciones] [proceso1 proceso2 ...]"
@@ -44,10 +44,10 @@ while getopts "u:t:r:kh" opt; do
         *) uso; exit 2 ;;
     esac
 done
-shift $(( OPTIND - 1))
+shift $((OPTIND - 1))
 
 # Procesos adicionales a vigilar (argumentos restantes)
-PROCESOS_VIGILAR =("$@")
+PROCESOS_VIGILAR=("$@")
 
 # Cleanup al salir
 trap 'echo "[$(date "+%H:%M:%S")] Monitor finalizado" >> "$LOG_FILE"' EXIT
