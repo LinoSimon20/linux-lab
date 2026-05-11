@@ -42,7 +42,7 @@ while [[ $# -gt 0 ]]; do
     shift
 done
 
-# === FUNCIONES DE LOG === [cite: 973]
+# === FUNCIONES DE LOG ===
 log() {
     local nivel=$1
     shift
@@ -165,3 +165,62 @@ instalar_dev_stack() {
     instalar_paquete "tmux" "tmux (terminal multiplexer)"
     instalar_paquete "shellcheck" "ShellCheck (linter Bash)"
 }
+
+# === CONFIGURACION POST-INSTALACIÓN ===
+configurar_git_global() {
+    log STEP "Verificando configuración de Git"
+    if git config --global user.name &>/dev/null; then
+        log OK "Git ya configurado: $(git config --global user.name)"
+    else
+        log WARN "Git no tiene nombre de usuario configurado."
+        log INFO "Ejecuta: git config --global user.name 'Tu Nombre'"
+        log INFO "Ejecuta: git config --global user.email 'tu@email.com'"
+    fi
+}
+
+# === RESUMEN FINAL ===
+mostrar_resumen() {
+    local total_nuevo=${#PAQUETES_INSTALADOS[@]}
+    local total_omitido=${#PAQUETES_OMITIDOS[@]}
+
+    echo ""
+    echo "=============================="
+    echo "    RESUMEN DE INSTALACIÓN"
+    echo "=============================="
+    echo " Nuevos instalados: $total_nuevo"
+    echo " Ya existían     : $total_omitido"
+    echo " Errores          : $ERRORES"
+    echo "=============================="
+
+    if [ $ERRORES -eq 0 ]; then
+        log OK "Instalación completada exitosamente"
+        echo ""
+        echo "Ejecuta: ./verify-install.sh"
+        echo "Para verificar la instalación."
+    else
+        log WARN "Instalación completada con $ERRORES errores"
+        echo "Revisa $LOG_FILE para detalles."
+    fi
+}
+
+# === MAIN ===
+main() {
+    echo ""
+    echo "============================="
+    echo "   DEV STACK INSTALLER v$VERSION"
+    echo "============================="
+    echo ""
+
+    if [ "$EUID" -ne 0 ]; then
+        log ERROR "Este script requiere privilegios root."
+        log INFO "Ejecuta: sudo $0"
+        exit 1
+    fi
+
+    detectar_os
+    instalar_dev_stack
+    configurar_git_global
+    mostrar_resumen
+}
+
+main "$@"
