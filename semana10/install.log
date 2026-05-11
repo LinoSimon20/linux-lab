@@ -1,0 +1,55 @@
+Dev Stack Installer v1.0.0
+Iniciado: 2026-05-10 22:25:01
+---
+[2026-05-10 22:25:01] [STEP] Detectando sistema operativo
+[2026-05-10 22:25:01] [OK] OS soportado: Linux Mint 22.3
+[2026-05-10 22:25:01] [INFO] OS: linuxmint | Version: 22.3
+[2026-05-10 22:25:01] [STEP] Actualizando lista de paquetes
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Todos los paquetes están actualizados.
+[2026-05-10 22:25:01] [OK] Lista de paquetes actualizada
+[2026-05-10 22:25:01] [STEP] Instalando herramientas esenciales
+[2026-05-10 22:25:01] [OK] Git (control de versiones) ya instalado (v1:2.43.0-1ubuntu7.3) -- omitido
+[2026-05-10 22:25:01] [OK] curl (transferencia HTTP) ya instalado (v8.5.0-2ubuntu10.9) -- omitido
+[2026-05-10 22:25:01] [OK] wget (descarga de archivos) ya instalado (v1.21.4-1ubuntu4.1) -- omitido
+[2026-05-10 22:25:01] [OK] Vim (editor de texto) ya instalado (v2:9.1.0016-1ubuntu7.13) -- omitido
+[2026-05-10 22:25:01] [OK] tree (visualizar directorios) ya instalado (v2.1.1-2ubuntu3.24.04.2) -- omitido
+[2026-05-10 22:25:01] [INFO] Instalando htop (monitor de procesos) (htop)...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Leyendo lista de paquetes...
+Creando árbol de dependencias...
+Leyendo la información de estado...
+Los paquetes indicados a continuación se instalaron de forma automática y ya no son necesarios.
+  linux-headers-6.17.0-14-generic linux-headers-6.17.0-20-generic
+  linux-hwe-6.17-headers-6.17.0-14 linux-hwe-6.17-headers-6.17.0-20
+  linux-hwe-6.17-tools-6.17.0-14 linux-hwe-6.17-tools-6.17.0-20
+  linux-image-6.17.0-14-generic linux-image-6.17.0-20-generic
+  linux-modules-6.17.0-14-generic linux-modules-6.17.0-20-generic
+  linux-modules-extra-6.17.0-14-generic linux-modules-extra-6.17.0-20-generic
+  linux-tools-6.17.0-14-generic linux-tools-6.17.0-20-generic
+Utilice «sudo apt autoremove» para eliminarlos.
+Se instalarán los siguientes paquetes NUEVOS:
+  htop
+0 actualizados, 1 nuevos se instalarán, 0 para eliminar y 0 no actualizados.
+Se necesita descargar 171 kB de archivos.
+Se utilizarán 434 kB de espacio de disco adicional después de esta operación.
+Des:1 http://archive.ubuntu.com/ubuntu noble/main amd64 htop amd64 3.3.0-4build1 [171 kB]
+Descargados 171 kB en 0s (4.085 kB/s)
+Seleccionando el paquete htop previamente no seleccionado.
+(Leyendo la base de datos ... (Leyendo la base de datos ... 5%(Leyendo la base de datos ... 10%(Leyendo la base de datos ... 15%(Leyendo la base de datos ... 20%(Leyendo la base de datos ... 25%(Leyendo la base de datos ... 30%(Leyendo la base de datos ... 35%(Leyendo la base de datos ... 40%(Leyendo la base de datos ... 45%(Leyendo la base de datos ... 50%(Leyendo la base de datos ... 55%(Leyendo la base de datos ... 60%(Leyendo la base de datos ... 65%(Leyendo la base de datos ... 70%(Leyendo la base de datos ... 75%(Leyendo la base de datos ... 80%(Leyendo la base de datos ... 85%(Leyendo la base de datos ... 90%(Leyendo la base de datos ... 95%(Leyendo la base de datos ... 100%(Leyendo la base de datos ... 670290 ficheros o directorios instalados actualmente.)
+Preparando para desempaquetar .../htop_3.3.0-4build1_amd64.deb ...
+Desempaquetando htop (3.3.0-4build1) ...
+Configurando htop (3.3.0-4build1) ...
+Procesando disparadores para mailcap (3.70+nmu1ubuntu1) ...
+Procesando disparadores para desktop-file-utils (0.27-2build1) ...
+Procesando disparadores para hicolor-icon-theme (0.17-2) ...
+Procesando disparadores para gnome-menus (3.36.0-1.1ubuntu3) ...
+Procesando disparadores para mate-menus (1.26.1+mint1) ...
+Procesando disparadores para man-db (2.12.0-4build2) ...
+[2026-05-10 22:25:01] [OK] htop (monitor de procesos) instalado correctamente
+[2026-05-10 22:25:01] [WARN] Error detectado. Iniciando rollback...
+[2026-05-10 22:25:01] [OK] Rollback completado. Paquetes revertidos: htop
