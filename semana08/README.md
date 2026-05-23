@@ -7,18 +7,20 @@ inventario completo de su contenido.
 ## Archivos
 | Archivo | Descripcion |
 |---------------------|----------------------------------------|
-| inventario.sh | Script principal de analisis |
-| inventario-report.md | Reporte generado (no versionado)|
-| commands-used.md | Documentacion de comandos y tecnicas |
+| `inventario.sh` | Script principal de analisis |
+| `inventario-report.md` | Reporte generado (no versionado)|
+| `commands-used.md` | Documentacion de comandos y tecnicas |
 > inventario-report.md no se versiona (.gitignore)
 
 ## Uso
 ### Analizar el repositorio actual
+```bash
 ./inventario.sh
-
+```
 ### Analizar otro directorio
+```
 ./inventario.sh/ruta/al/repo
-
+```
 ## Tecnicas Aplicadas
 - mapfile -t para cargar find en un array
 - Arrays asociativos para conteo y tamano por extension
