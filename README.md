@@ -3,12 +3,14 @@
 # Linux Lab - Repositorio de Aprendizaje
 
 ## Estudiante
-** Nombre :** Lino Alden Simon Guzman
-** Semestre :** I/2026
+**Nombre:** Lino Alden Simon Guzman
+
+**Semestre:** I/2026
 
 ## Descripcion
 Repositorio de aprendizaje Linux en 15 semanas.
-Cada semana incluye un capstone practico versionado con Git.
+
+Cada semana incluye un capstone práctico versionado con Git.
 
 ## Progreso del Curso
 | Semana |              Tema              | Estado |
@@ -22,7 +24,7 @@ Cada semana incluye un capstone practico versionado con Git.
 |   07   | Bash Scripting - Loops         |   Ok   |
 |   08   | Bash Scripting - Avanzado      |   Ok   |
 |   09   | Gestion de Procesos            |   Ok   |
-|   10   | Systemd y Cron                 |        |
+|   10   | Systemd y Cron                 |   Ok   |
 |   11   | Gestion de Paquetes            |        |
 |   12   | Usuarios y Permisos            |        |
 |   13   | Redes en Linux                 |        |
@@ -148,7 +150,15 @@ Cada semana incluye un capstone practico versionado con Git.
 │    │    └── monitor-procesos.sh
 │    └── reportes/
 │         └── README.md
-└── semana10/
+├── semana10/
+│    ├── README.md
+│    ├── install-dev-stack.sh
+│    ├── verify-install.sh
+│    ├── rollback.sh
+│    ├── install.log
+│    ├── verification-report.md
+│    └── docs/
+└── semana11/
      └── (En progreso...)
 ```
 
@@ -159,11 +169,11 @@ Cada semana incluye un capstone practico versionado con Git.
 - Construir portfolio en GitHub
 
 ## Tecnologias
-- ** OS :** Linux Mint v.22.3
-- ** Shell :** Bash 5.2.21
-- ** VCS :** Git 2.43.0
-- ** Editor :** nano - vim
-- ** Hosting :** GitHub
+- **OS:** Linux Mint v.22.3
+- **Shell:** Bash 5.2.21
+- **VCS:** Git 2.43.0
+- **Editor:** nano - vim
+- **Hosting:** GitHub
 ## Contacto
 - Email : linosimon.s20@gmail.com
 - GitHub : https://github.com/LinoSimon20
